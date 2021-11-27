@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class string{
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter a sentence : ");
+        String sentence = scn.nextLine();
+        System.out.println("Enter a word that you want you search");
+        String word = scn.next();
+        int index = sentence.indexOf(word);
+        if(index==-1){
+            System.out.println(word+" is not found.");
+        }
+        else{
+            System.out.println(word+" is found at index "+index );
+        }
+    }
+    
+}
